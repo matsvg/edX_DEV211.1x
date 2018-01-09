@@ -1,49 +1,243 @@
 <!DOCTYPE html>
 <html lang="no-nb">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Demo</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Demo</title>
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+    </head>
+    <body bgcolor="lightblue">
+        <h1>Hello World!</h1>
+        <h3><a href="#bottom">To end of page.</a></h3>
 
-<!-- Unummererte liste (pungt)-->
-    <ul>
-        <li>Alpha</li>
-        <li>Bravo</li>
-        <li>Charlie</li>
-    </ul>
+    <!-- Unummererte liste (pungt)-->
+        <ul>
+            <li>Alpha</li>
+            <li>Bravo</li>
+            <li>Charlie</li>
+        </ul>
 
-<!--Horisontal linje-->
+    <!--Horisontal linje-->
 
-    <hr />
+        <hr />
 
-<!--Nummerert liste (tall)-->
-    <ol>
-        <li>Alpha</li>
-        <li>Bravo</li>
-        <li>Charlie</li>
-    </ol>
+    <!--Nummerert liste (tall)-->
+        <ol>
+            <li>Alpha</li>
+            <li>Bravo</li>
+            <li>Charlie</li>
+        </ol>
 
-<!--Eksempel fra video-->
-    <hr />
-    
-    <h1>1st Header</h1>
-    <h2>2 Header</h2>
-    <h3>3 Header</h3>
-    <h4>4 Header</h4>
-    <h5>5 Header</h5>
-    <h6>6 Header</h6>
-    <p>
-        <b><i>Lorem ipsum dolor sit amet</i></b>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <i>voluptate velit esse cillum</i> dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <p>
-        <ins>Lorem ipsum</ins> <del>dolor sit amet</del>, <mark>consectetur adipiscing elit</mark>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <!--Eksempel fra video-->
+        <hr />
+        
+        <h1>1st Header</h1>
+        <h2>2 Header</h2>
+        <h3>3 Header</h3>
+        <h4>4 Header</h4>
+        <h5>5 Header</h5>
+        <h6>6 Header</h6>
+        <p>
+            <b><i>Lorem ipsum dolor sit amet</i></b>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <i>voluptate velit esse cillum</i> dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            <ins>Lorem ipsum</ins> <del>dolor sit amet</del>, <mark>consectetur adipiscing elit</mark>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <br />
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+    <!--Span eksempel-->    
+        <hr />
+
+        <span>This is the first line of text</span>
+        <span>This is the second line of text</span>
         <br />
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-</body>
+        <br />
+        <span style="background-color:red">This is the third line of text</span>
+        <span style="background-color:green">This is the fourth line of text</span>
+        <br />
+        <br />
+        <div style="background-color:red; width:800px">This is the fifth line of text</div>
+        <span style="background-color:green">This is the sixth line of text</span>
+
+    <!--Semantic Formatting Elements - Disse ser like ut-->
+        <hr />
+
+        This is a <b>line of text</b>
+        <br />
+        This is a <strong>line of text</strong>
+        <br />
+        <br />
+        This is a <i>line of text</i>
+        <br />
+        This is a <em>line of text</em>
+
+    <!--Ett eksempel-->
+        <hr />
+
+        <p align="right">
+                <font face="Consolas" size="62px" color="purple">
+                    <strong>Demo</strong> <em>Text</em>
+                </font>
+                <center>
+                    Sample Text
+                </center>
+        </p>
+
+    <!--Hyperlink-->
+        <hr />
+
+        <a href="http://www.edx.org" target="_self" rel="author">Go to edX.org</a>
+        <br />
+        <a href="http://www.microsoft.com" target="_blank" rel="help">Go to Microsoft</a>
+
+    <!--Intern Hyperlink-->
+        <hr />
+
+        <h1 id="topSection">Text Page</h1>
+        <a href="#skipToSection">Go to Highlighted Section</a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p id="skipToSection">
+            <mark>
+                Cool Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br />
+                <a href="#topSection">Go to top</a>
+            </mark>
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+    <!--Textarea eksempel-->
+        <hr />
+        
+        <textarea rows="3" cols="30">
+            We live in a mobile-first and cloud-first world. Computing is ubiquitous, and experiences span devices and exhibit ambient intelligence.
+        </textarea>
+    
+    <!--Select eksempel-->
+        <hr />
+
+        <select>
+            <option value="DAT202x">Processing Big Data with Azure HDInsight</option>
+            <option value="DAT204x">Introduction to R Programming</option>
+            <option value="CLD203x">Office 365: Managing Identities and Services</option>
+            <option value="DEV208x">Introduction to jQuery</option>
+        </select>
+        <br />
+        <br />
+        <select>
+            <optgroup label="Data Platform">
+                <option value="DAT202x">Processing Big Data with Azure HDInsight</option>
+                <option value="DAT204x">Introduction to R Programming</option>
+            </optgroup>
+            <optgroup label="Cloud">
+                <option value="CLD203x">Office 365: Managing Identities and Services</option>
+            </optgroup>
+            <optgroup label="Development">
+                <option value="DEV208x">Introduction to jQuery</option>
+            </optgroup>
+        </select>
+
+    <!--Form eksempel-->
+        <hr />
+
+        <form ...>
+            Username: <input type="text" name="username" />
+            E-mail Address: <input type="email" name="emailaddress" />
+        </form>
+
+    <!--Button eksempel-->
+        <hr />
+        
+        <button type="button">
+            <img src="images/microsoft.png" alt="Microsoft" width="80px"/>
+            <br />
+            Apply to Microsoft!
+        </button>
+
+    <!--Større Form Eksempel-->
+        <hr />
+        
+        <form>
+            <fieldset>
+                <legend>Text Data</legend>
+                First Name:<br />
+                <input type="text" name="firstName" value="" placeholder="Enter your First Name here" /><br />
+                Last Name:<br />
+                <input type="text" name="lastName" value="" placeholder="Enter your Last Name here" /><br />
+            </fieldset>
+            <fieldset>
+                <legend>Numeric Data</legend>
+                Age:<br />
+                <input type="range" name="age" min="0" max="100" value="25" /><br />
+                <br />
+            </fieldset>
+            <input type="submit" value="Click Me to Submit" />
+        </form>
+
+    <!--Patern Eksempel-->
+        <hr />
+
+        <form>
+            <fieldset>
+                <legend>Test form</legend>
+                Zip Code:
+                <input name="zip_code" type="text" pattern="\d{5}(-\d{4})?" required="required" />
+            </fieldset>
+            <input type="submit" value="Click me to Submit">
+        </form>
+        
+    <!--Fieldset og Legend eksempel-->
+        <hr />
+
+        <form>
+                <fieldset>
+                    <legend>Create User ID</legend>
+                    Domain: <input type="text" name="group" value="" />
+                    <br />
+                    Username: <input type="text" name="identity" value="" />
+                </fieldset>
+                <fieldset>
+                    <legend>User Metadata</legend>
+                    Department: <input type="text" name="dept" value="" />
+                    <br />
+                    Display Name: <input type="text" name="name" value="" />
+                </fieldset>
+                <fieldset>
+                    <legend>Require Admin Approval</legend>
+                    Yes: <input type="radio" name="approval" value="true" checked="checked" />
+                    <br />
+                    No: <input type="radio" name="approval" value="false" />
+                </fieldset>
+                <input type="submit" value="Click to Submit" />
+        </form>
+
+    <!--Time Element Eksempel-->
+        <hr />
+
+        <p>
+            Your next appointment is on
+            <time datetime="2015-12-12T08:30:00+01:00">
+                <strong>December 12th at 08:30</strong>
+            </time>
+            .
+        </p>
+    
+    <!--Nederst på siden-->
+        <div id="bottom">END</div>
+    </body>
 </html>
 
